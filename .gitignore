@@ -1,0 +1,27 @@
+# Node modules
+node_modules/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Test output
+coverage/
+jest-test-results.json
+
+# Optional: ignore MongoDB dump files
+dump/
+
+# Optional: ignore build or dist folders
+dist/
+build/
