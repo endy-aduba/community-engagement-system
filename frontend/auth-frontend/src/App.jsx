@@ -1,14 +1,11 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Signup from './components/Signup';
-import Login from './components/Login';
 
 const App = () => {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Signup />} />
-        <Route path="/login" element={<Login />} />
+        <Route path="/" element={<h1>Auth App Microfrontend Loaded</h1>} />
       </Routes>
     </Router>
   );

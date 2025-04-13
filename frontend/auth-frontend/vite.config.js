@@ -11,9 +11,17 @@ export default defineConfig({
       exposes: {
         './AuthApp': './src/App.jsx',
       },
-      shared: ['react', 'react-dom']
-    })
+      shared: ['react', 'react-dom', 'react-router-dom'],
+      // 👇 forces it to work even in dev mode
+      dev: true
+    }),
   ],
+  server: {
+    port: 5173,
+    fs: {
+      allow: ['.'],
+    }
+  },
   build: {
     target: 'esnext',
     minify: false,
